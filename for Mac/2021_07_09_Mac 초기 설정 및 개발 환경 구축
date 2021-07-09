@@ -1,0 +1,78 @@
+Mac 초기 설정 및 개발 환경 구축
+
+기초 설정
+1. Dock 설정
+2. 상단바 설정(블루투스, 스피커, 배터리)
+3. Mission Control > 핫코너
+4. 트랙패드 설정
+5. Finder 설정(경로 막대, 스크롤 설정)
+6. Chrome 기본 브라우저 설정
+7. 확대/축소 설정(시스템 환경설정 > 손쉬운 사용 > 확대/축소하면 스크롤 제스처를 다음 보조 키와 함께 사용)
+
+필수 어플
+1. Chrome
+2. Itsycal
+3. 한글뷰어
+4. MS Office
+5. Zoom
+6. Webex
+7. App Cleaner
+8. 화면분할어플(Magnet 유료어플, Spectacle 무료어플)
+9. Discord
+10. Mettermost
+11. Keka(압축풀기, 윈도우와의 호환을 위해)
+12. Notion
+
+개발환경
+1. Brew(macOS용 패키지 관리자)
+2. Nodejs
+3. Visual Studio Code
+4. Jdk 설치(Oracle, Zulu)
+5. Apache tomcat 설치
+6. Git
+7. Eclipes
+8. InteliJ
+9. STS
+10. Docker
+
+
+homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" (bomebrew 설치)
+Brew install wget
+Brew install tree(파일, 디렉토리 구조)
+Brew install cask(cask: 그래픽을 통해 작업하는 프로그램 설치할 때 사용)
+Brew update(프로그램 설치 또는 업그레이드 전에 새롭게 진행된 업데이트 있는지 확인되면서 설치)
+Brew search [프로그램명] (brew를 통해 설치할 수 있는지 확인가능)
+Brew cask list(프로그램 목록 확인)
+Brew cask remove [프로그램명] (프로그램 삭제)/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)" (home-brew 삭제)
+Brew: 커맨드 라인 프로그램
+Brew upgrade: 설치된 프로그램 최신버전으로 업데이트
+Brew cleanup: 업데이트 후 필요없는 이전 버전 패키지 삭제
+
+참고자료
+- https://brew.sh/index_ko
+- https://whitepaek.tistory.com/3
+- https://www.youtube.com/watch?v=bJtdulEkf64
+
+Visual studio code
+- https://code.visualstudio.com/download
+
+Nodejs
+- https://nodejs.org/en/
+- https://hello-bryan.tistory.com/93
+
+Jdk
+- Oracle jdk: https://www.oracle.com/kr/java/technologies/javase/javase-jdk8-downloads.html
+- Zulu(brew update > brew search Zulu > brew tap homebrew/cask-versions > brew search Zulu > brew cask install Zulu zulu8이 안먹으면 brew install —cask Zulu zulu8 ): https://firework-ham.tistory.com/65
+- Zulu 16 지우기: sudo rm -rf zulu-16.jdk
+- Zulu 15 설치: brew install —cask zulu15
+
+Apache tomcat
+- https://tomcat.apache.org/download-90.cgi
+- 버전9, binary tar.gz 파일 다운
+
+Git
+- https://lsjsj92.tistory.com/596
+- Brew install git
+- 사용자설정(git config —global user.name(and user.email))
+- 사용자 확인(git config --list)
